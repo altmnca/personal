@@ -10,28 +10,14 @@
 html, body {
     height: 100%;
     background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    padding: none;
+    overflow: hidden;
 }
 
 div {
     display: block;
     overflow: hidden;
     padding: none;
-}
-
-.main {
-    text-align: center;
-    height: 100%;
-}
-
-.contain {
-    color: var(--quaternary);
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 0 0 0 0;
-}
-
-.d-grid {
-    padding: 10px 10px 10px 10px;
 }
 
 h1 {
@@ -41,21 +27,7 @@ h1 {
 }
 
 p {
-    font-size: 16pt;
-}
-
-.btn {
-    color: var(--quaternary);
-    border-color: var(--quaternary);
-    border: 3px solid var(--quaternary);
-    border-radius: 50px 50px 50px 50px;
-}
-
-.btn:hover {
-    color: var(--quaternary);
-    background-color: var(--tertiary);
-    border: 3px solid transparent;
-    border-radius: 50px 50px 50px 50px;
+    font-size: 14pt;
 }
 
 img {
@@ -72,24 +44,55 @@ svg {
     transition: 0.15s;
 }
 
-svg:hover {
-    fill: var(--tertiary);
-}
-
 a {
     text-decoration: none;
     color: var(--quaternary);
     font-family: 'Quicksand', sans-serif;
+    font-size: 14pt;
 }
 
 a:hover {
+    color: var(--tertiary);
     text-decoration: none;
-    color: var(--quaternary);
 }
 
 a:visited {
     text-decoration: none;
     color: var(--quaternary);
+}
+
+
+.main {
+    text-align: center;
+    height: 100%;
+}
+
+.contain {
+    color: var(--quaternary);
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px 10px 10px 10px;
+}
+
+.d-grid {
+    padding: 10px 10px 10px 10px;
+}
+
+.btn {
+    color: var(--quaternary);
+    border-color: var(--quaternary);
+    border: 3px solid var(--quaternary);
+    border-radius: 50px 50px 50px 50px;
+}
+
+.btn:hover {
+    color: var(--quaternary);
+    background-color: var(--tertiary);
+    border: 3px solid transparent;
+}
+
+svg:hover {
+    fill: var(--tertiary);
 }
 
 .text {
