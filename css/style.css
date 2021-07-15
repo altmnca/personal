@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 :root {
     --primary: #44CF6C;
     --secondary: #54dbc0;
@@ -38,6 +40,10 @@ h1 {
     color: var(--quaternary);
 }
 
+p {
+    font-size: 16pt;
+}
+
 .btn {
     color: var(--quaternary);
     border-color: var(--quaternary);
@@ -72,20 +78,22 @@ svg:hover {
 
 a {
     text-decoration: none;
-    color: var(--quaternary)
+    color: var(--quaternary);
+    font-family: 'Quicksand', sans-serif;
 }
 
 a:hover {
     text-decoration: none;
-    color: var(--quaternary)
+    color: var(--quaternary);
 }
 
 a:visited {
     text-decoration: none;
-    color: var(--quaternary)
+    color: var(--quaternary);
 }
 
 .text {
     padding: 5px 5px 0px 5px;
-    color: var(--quaternary)
+    color: var(--quaternary);
+    font-family: 'Quicksand', sans-serif;
 }
