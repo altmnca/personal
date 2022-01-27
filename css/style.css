@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Average&family=Darker+Grotesque:wght@500&family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto&display=swap');
 
 :root {
     --primary: #16e896;
     --secondary: #54dbc0;
     --tertiary: #EE4266;
     --quaternary: white;
-    --font1: 'Darker Grotesque', sans-serif;
-    --font2: 'Average', serif;
-    --font3: 'Jost', sans-serif;
+    --font1: 'Open Sans', sans-serif;
+    --font2: 'Roboto', sans-serif;
 }
 
 html, body {
@@ -25,12 +24,8 @@ div {
 
 h1 {
     text-align: center;
-    font-size: 32pt;
+    font-size: 26pt;
     color: var(--quaternary);
-}
-
-p {
-    font-size: 22pt;
 }
 
 img {
@@ -51,7 +46,7 @@ a {
     text-decoration: none;
     color: var(--quaternary);
     font-family: var(--font1);
-    font-size: 22pt;
+    font-size: 20pt;
 }
 
 a:hover {
