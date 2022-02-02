@@ -3,8 +3,13 @@
 :root {
     --primary: #16e896;
     --secondary: #54dbc0;
-    --tertiary: #EE4266;
-    --quaternary: white;
+    --tertiary: white;
+    --linkedin: #4284f5;
+    --github: #5f5f5f;
+    --insta: #dd528e;
+    --steam: #2ea7e4;
+    --bulb: #ffe344;
+    --vax: #fbbb54;
     --font1: 'Open Sans', sans-serif;
     --font2: 'Roboto', sans-serif;
 }
@@ -25,7 +30,7 @@ div {
 h1 {
     text-align: center;
     font-size: 26pt;
-    color: var(--quaternary);
+    color: var(--tertiary);
 }
 
 img {
@@ -38,25 +43,57 @@ svg {
     padding: 10px 10px 10px 10px;
     width: 70px;
     height: 70px;
-    fill: var(--quaternary);
+    fill: var(--tertiary);
     transition: 0.15s;
 }
 
 a {
     text-decoration: none;
-    color: var(--quaternary);
+    color: var(--tertiary);
     font-family: var(--font1);
     font-size: 20pt;
 }
 
 a:hover {
-    color: var(--primary);
     text-decoration: none;
+    color: var(--secondary);
+}
+
+.spoofy:hover {
+    fill: var(--primary);
+}
+
+.linkedin:hover {
+    fill: var(--linkedin);
+}
+
+.github:hover {
+    fill: var(--github);
+}
+
+.insta:hover {
+    fill: var(--insta);
+}
+
+.steam:hover {
+    fill: var(--steam);
+}
+
+.bulb:hover {
+    fill: var(--bulb);
+}
+
+.vax:hover {
+    fill: var(--vax);
+}
+
+svg:hover {
+    fill: var(--tertiary);
 }
 
 a:visited {
     text-decoration: none;
-    color: var(--quaternary);
+    color: var(--tertiary);
 }
 
 .main {
@@ -65,19 +102,15 @@ a:visited {
 }
 
 .contain {
-    color: var(--quaternary);
+    color: var(--tertiary);
     margin-top: auto;
     margin-bottom: auto;
     padding: 10px 10px 10px 10px;
 }
 
-svg:hover {
-    fill: var(--primary);
-}
-
 .text {
     padding: 5px 5px 0px 5px;
-    color: var(--quaternary);
+    color: var(--tertiary);
     font-family: var(--font1);
 }
 
