@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto&display=swap');
 
+/* Variable section */
 :root {
     --primary: #16e896;
     --secondary: #54dbc0;
