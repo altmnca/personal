@@ -15,9 +15,19 @@
     --font2: 'Roboto', sans-serif;
 }
 
-html, body {
+html {
     height: 100%;
-    background: /*linear-gradient(to bottom right, var(--secondary), var(--primary));*/ black;
+    background: black;
+    padding: none;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    height: 100%;
+    background: black;
     padding: none;
     overflow: hidden;
 }
@@ -32,6 +42,10 @@ h1 {
     text-align: center;
     font-size: 26pt;
     color: var(--tertiary);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 img {
@@ -46,6 +60,8 @@ svg {
     height: 70px;
     fill: var(--tertiary);
     transition: 0.15s;
+    vertical-align: middle;
+
 }
 
 a {
@@ -57,7 +73,11 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: var(--secondary);
+    color: #54dbc0;
+}
+
+a:visited {
+    text-decoration: none;
 }
 
 .spoofy:hover {
@@ -92,20 +112,15 @@ svg:hover {
     fill: var(--tertiary);
 }
 
-a:visited {
-    text-decoration: none;
-    color: var(--tertiary);
-}
-
 .main {
+    display: flex;
     text-align: center;
     height: 100%;
 }
 
 .contain {
     color: var(--tertiary);
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
     padding: 10px 10px 10px 10px;
 }
 
@@ -117,4 +132,8 @@ a:visited {
 
 .botpad {
     padding-bottom: 10px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
 }
