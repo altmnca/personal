@@ -40,9 +40,15 @@ div {
     padding: none;
 }
 
+img {
+    /* padding: 5px 5px 5px 5px; */
+    border-radius: 50%;
+    width: 160px;
+}
+
 h1 {
     text-align: center;
-    font-size: 26pt;
+    font-size: 27px;
     color: var(--tertiary);
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -50,27 +56,11 @@ h1 {
     line-height: 1.2;
 }
 
-img {
-    padding: 10px 10px 10px 10px;
-    border-radius: 50%;
-    width: 220px;
-}
-
-svg {
-    padding: 10px 10px 10px 10px;
-    width: 70px;
-    height: 70px;
-    fill: var(--tertiary);
-    transition: 0.15s;
-    vertical-align: middle;
-
-}
-
 a {
     text-decoration: none;
     color: var(--tertiary);
     font-family: var(--font1);
-    font-size: 20pt;
+    font-size: 18px;
 }
 
 a:hover {
@@ -82,13 +72,58 @@ a:visited {
     text-decoration: none;
 }
 
-.p {
+p {
     text-decoration: none;
     color: var(--tertiary);
     font-family: var(--font2);
-    font-size: 16pt;
+    font-size: 16px;
 }
 
+svg {
+    padding: 5px 5px 5px 5px;
+    width: 60px;
+    height: 60px;
+    fill: var(--tertiary);
+    transition: 0.15s;
+    vertical-align: middle;
+
+}
+
+.main {
+    display: flex;
+    text-align: center;
+    height: 100%;
+}
+
+.contain {
+    color: var(--tertiary);
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+}
+
+.text {
+    padding: 5px 5px 5px 5px;
+    margin: 0;
+    color: var(--tertiary);
+    font-family: var(--font1);
+}
+
+.smalltext {
+    padding: 15px 5px 0px 5px;
+    margin: 0;
+    color: var(--tertiary);
+    font-family: var(--font1);
+}
+
+.botpad {
+    padding-bottom: 10px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/* custom SVG colours */
 .spoofy:hover {
     fill: var(--primary);
 }
@@ -133,41 +168,4 @@ a:visited {
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-miterlimit: 10;
-}
-
-svg:hover {
-    fill: var(--tertiary);
-}
-
-.main {
-    display: flex;
-    text-align: center;
-    height: 100%;
-}
-
-.contain {
-    color: var(--tertiary);
-    margin: auto;
-    padding: 10px 10px 10px 10px;
-}
-
-.text {
-    padding: 5px 5px 5px 5px;
-    margin: 0;
-    color: var(--tertiary);
-    font-family: var(--font1);
-}
-
-.smalltext {
-    padding: 5px 5px 5px 5px;
-    color: var(--tertiary);
-    font-family: var(--font1);
-}
-
-.botpad {
-    padding-bottom: 10px;
-}
-
-*, ::after, ::before {
-    box-sizing: border-box;
 }
