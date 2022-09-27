@@ -10,7 +10,9 @@
     --insta: #dd528e;
     --steam: #2ea7e4;
     --bulb: #ffe344;
-    --vax: #fbbb54;
+    --vax: #d454fb;
+    --lance: #28a745;
+    --daa: #EF6461;
     --font1: 'Open Sans', sans-serif;
     --font2: 'Roboto', sans-serif;
 }
@@ -80,6 +82,13 @@ a:visited {
     text-decoration: none;
 }
 
+.p {
+    text-decoration: none;
+    color: var(--tertiary);
+    font-family: var(--font2);
+    font-size: 16pt;
+}
+
 .spoofy:hover {
     fill: var(--primary);
 }
@@ -108,6 +117,24 @@ a:visited {
     fill: var(--vax);
 }
 
+.lance:hover {
+    fill: var(--lance);
+}
+
+.wave:hover {
+    stroke: var(--daa);
+}
+
+/* because the waveform svg cannot be filled */
+.wave {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
 svg:hover {
     fill: var(--tertiary);
 }
@@ -125,7 +152,14 @@ svg:hover {
 }
 
 .text {
-    padding: 5px 5px 0px 5px;
+    padding: 5px 5px 5px 5px;
+    margin: 0;
+    color: var(--tertiary);
+    font-family: var(--font1);
+}
+
+.smalltext {
+    padding: 5px 5px 5px 5px;
     color: var(--tertiary);
     font-family: var(--font1);
 }
