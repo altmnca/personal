@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
 
 /* Variable section */
 :root {
@@ -13,8 +14,10 @@
     --vax: #d454fb;
     --lance: #28a745;
     --daa: #EF6461;
-    --font1: 'Open Sans', sans-serif;
-    --font2: 'Roboto', sans-serif;
+    /* --font1: "Courier Prime", monospace; */
+    --font1: "Rokkitt", serif;
+
+    
 }
 
 html {
@@ -40,20 +43,173 @@ div {
     padding: none;
 }
 
+img {
+    /* padding: 5px 5px 5px 5px; */
+    border-radius: 50%;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 9vw;
+    color: var(--tertiary);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: var(--font1);
+}
+
+a {
+    text-decoration: none;
+    color: var(--tertiary);
+    font-family: var(--font1);
+    font-size: 4vw;
+    vertical-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+p {
+    text-decoration: none;
+    color: var(--tertiary);
+    font-family: var(--font2);
+    font-size: 16px;
+}
+
+svg {
+    padding: 5px 5px 5px 5px;
+    width: 4vw;
+    height: 4vw;
+    fill: var(--tertiary);
+    transition: 0.15s;
+    vertical-align: middle;
+
+}
+
 .main {
     display: flex;
     text-align: center;
     justify-content: center;
     height: 100%;
+    width: 100%;
 }
 
 .contain {
     color: var(--tertiary);
     margin: auto;
     padding: 10px 10px 10px 10px;
+    width: 100%;
 }
 
+/* col AND ROWS */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col50 {
+    float: left;
+    width: 50%;
+    padding: 0px;
+}  
+
+.col33 {
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+}  
+
+.col66 {
+    float: left;
+    width: 66.66%;
+    padding: 0px;
+}  
+
+.col75 {
+    float: left;
+    width: 75%;
+    padding: 0px;
+}  
+
+.col25 {
+    float: left;
+    width: 25%;
+    padding: 0px;
+}  
+
+.col20 {
+    float: left;
+    width: 20%;
+    padding: 0px;
+}  
+
+.col80 {
+    float: left;
+    width: 80%;
+    padding: 0px;
+}  
+
+/* custom SVG hover colours */
+.spoofy:hover {
+    fill: var(--primary);
+}
+
+.linkedin:hover {
+    fill: var(--linkedin);
+}
+
+.github:hover {
+    fill: var(--github);
+}
+
+.insta:hover {
+    fill: var(--insta);
+}
+
+.steam:hover {
+    fill: var(--steam);
+}
+
+.bulb:hover {
+    fill: var(--bulb);
+}
+
+.vax:hover {
+    fill: var(--vax);
+}
+
+.lance:hover {
+    fill: var(--lance);
+}
+
+.wave:hover {
+    stroke: var(--daa);
+}
+
+
+/* 
+class details
+.card -> for actual website content, the stuff that has all contact info and links
+
+.circle -> the circle animation that tells portait device users to rotate their device
+*/
+
+/* PORTRAIT */
 @media screen and (orientation:portrait) { 
+    /* CARD */
+    .card {
+        display: none;
+    }
+   
+    /* CIRCLE */
     .circle { 
         width: 100%;
         overflow: hidden; 
@@ -115,8 +271,10 @@ div {
         to { transform: rotate(360deg); }
     }    
 }
+
+/* LANDSCAPE */
 @media screen and (orientation:landscape) {
     .circle {
-        display: hidden;
+        display: none;
     }
 }
