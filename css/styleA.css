@@ -83,7 +83,7 @@ p {
 }
 
 svg {
-    padding: 10px 5vh 10px 3vh;
+    padding: 5px 5vh 5px 3vh;
     width: 8vh;
     height: 8vh;
     fill: var(--tertiary);
