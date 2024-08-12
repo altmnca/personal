@@ -44,7 +44,6 @@ div {
 
 img {
     border-radius: 50%;
-    /* max-width: 80vh; */
     width: 100%;
 }
  
@@ -83,7 +82,7 @@ p {
 }
 
 svg {
-    padding: 5px 5vh 5px 3vh;
+    /* padding: 5px 5vh 5px 3vh; */
     width: 8vh;
     height: 8vh;
     fill: var(--tertiary);
