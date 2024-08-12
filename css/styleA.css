@@ -44,13 +44,13 @@ div {
 
 img {
     border-radius: 50%;
-    max-width: 90vh;
+    /* max-width: 80vh; */
     width: 100%;
 }
-
+ 
 .heading1 {
     text-align: center;
-    font-size: 13vh;
+    font-size: 12vh;
     color: var(--tertiary);
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -63,7 +63,7 @@ a {
     text-decoration: none;
     color: var(--tertiary);
     font-family: var(--font1);
-    font-size: 7.5vh;
+    font-size: 7vh;
     vertical-align: center;
 }
 
@@ -114,6 +114,7 @@ svg {
     width: 100%;
     max-width: 150vh; /* Keeps the width responsive */
     box-sizing: border-box;
+    padding: 20px 0 20px 0;
 }
 
 .card {
