@@ -62,13 +62,8 @@ a {
     text-decoration: none;
     color: var(--tertiary);
     font-family: var(--font1);
-    font-size: 7vh;
+    font-size: 8vh;
     vertical-align: center;
-    padding: 0;
-    line-height: 1.1;
-    
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
 }
 
 a:hover {
@@ -87,9 +82,9 @@ p {
 }
 
 svg {
-    /* padding: 5px 5vh 5px 3vh; */
-    width: 5vh;
-    height: 5vh;
+    padding: 5px 2vh 5px 3vh;
+    width: 7vh;
+    height: 7vh;
     fill: var(--tertiary);
     transition: 0.15s;
     vertical-align: middle;
