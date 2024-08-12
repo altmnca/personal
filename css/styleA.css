@@ -35,6 +35,11 @@ body {
     background: black;
     padding: none;
     overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div {
@@ -44,14 +49,14 @@ div {
 }
 
 img {
-    /* padding: 5px 5px 5px 5px; */
     border-radius: 50%;
+    max-width: 25vh;
     width: 100%;
 }
 
-h1 {
+.heading1 {
     text-align: center;
-    font-size: 9vw;
+    font-size: 13vh;
     color: var(--tertiary);
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -64,7 +69,7 @@ a {
     text-decoration: none;
     color: var(--tertiary);
     font-family: var(--font1);
-    font-size: 4vw;
+    font-size: 7.5vh;
     vertical-align: center;
 }
 
@@ -84,13 +89,12 @@ p {
 }
 
 svg {
-    padding: 5px 5px 5px 5px;
-    width: 4vw;
-    height: 4vw;
+    padding: 0.2vh 5vh 0.2vh 1.5vh;
+    width: 8vh;
+    height: 8vh;
     fill: var(--tertiary);
     transition: 0.15s;
     vertical-align: middle;
-
 }
 
 .main {
@@ -104,8 +108,8 @@ svg {
 .contain {
     color: var(--tertiary);
     margin: auto;
-    padding: 10px 10px 10px 10px;
-    width: 100%;
+    /* padding: 10px 10px 10px 10px; */
+    max-width: 130vh;
 }
 
 /* col AND ROWS */
@@ -115,11 +119,20 @@ svg {
     clear: both;
 }
 
+.row {
+    margin: 1.5vh 1.5vh 1.5vh 1.5vh;
+}
+
+/* For ALIGNING SVG AND TEXT SEPARATELY */
 .col50 {
     float: left;
     width: 50%;
     padding: 0px;
-}  
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid white; /* Adjust the width of the border as needed */
+    box-sizing: border-box;
+}
 
 .col33 {
     float: left;
@@ -154,7 +167,7 @@ svg {
 .col80 {
     float: left;
     width: 80%;
-    padding: 0px;
+    padding: 0;
 }  
 
 /* custom SVG hover colours */
@@ -194,6 +207,13 @@ svg {
     stroke: var(--daa);
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vh 1.5vh 1.5vh 1.5vh;
+    width: 100%;
+    height: 100%;
+}
 
 /* 
 class details
@@ -203,7 +223,7 @@ class details
 */
 
 /* PORTRAIT */
-@media screen and (orientation:portrait) { 
+@media screen and (max-aspect-ratio: 5/4) { 
     /* CARD */
     .card {
         display: none;
@@ -273,8 +293,50 @@ class details
 }
 
 /* LANDSCAPE */
-@media screen and (orientation:landscape) {
+@media screen and (min-aspect-ratio: 5/4) {
     .circle {
         display: none;
     }
 }
+
+/* Terminal animation */
+.terminal {
+    display: inline-flex;
+    align-items: center;
+}
+
+.cursor {
+    width: 5vh;
+    height: 10vh;
+    background-color: white;
+    animation: blink 1s infinite;
+    margin-left: 4vh;
+    margin-right: 0;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+/* END of terminal animation */
+
+/* For ALIGNING SVG AND TEXT SEPARATELY */
+.link-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-item svg {
+    flex-shrink: 0; /* Prevents the SVG from shrinking */
+}
+
+.link-item span {
+    margin-left: auto; /* Pushes the text to the right */
+}
+
+/* END OF SVG AND TEXT ALIGN */
