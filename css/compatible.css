@@ -24,8 +24,8 @@
 
 .contain {
     color: var(--tertiary);
-    max-width: 100vh !important;
-    min-width: 100vh !important;
+    max-width: 90vh !important;
+    min-width: 90vh !important;
 }
 
 
@@ -76,8 +76,8 @@
 
 svg {
     padding: 5px 0.5vh 5px 0.5vh;
-    width: 5vh;
-    height: 5vh;
+    width: 4vh;
+    height: 4vh;
     fill: var(--tertiary);
     transition: 0.15s;
     vertical-align: middle;
@@ -98,7 +98,7 @@ a {
     text-decoration: none;
     color: var(--tertiary);
     font-family: var(--font1);
-    font-size: 4.65vh;
+    font-size: 4vh;
     vertical-align: center;
     text-align: center;
     align-items: center;

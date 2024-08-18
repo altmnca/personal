@@ -17,18 +17,7 @@
 }
 
 html, body {
-    margin: 0;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-    height: 100%;
-    width: 100%;
-    background: black;
-    padding: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
 }
 
 .contain {
