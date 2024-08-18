@@ -16,6 +16,27 @@
     --font1: "Rokkitt", serif;    
 }
 
+html, body {
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    height: 100%;
+    width: 100%;
+    background: black;
+    padding: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain {
+    color: var(--tertiary);
+    max-width: 150vh;
+    margin: auto;
+}
+
 .link-item span {
     margin-left: auto;
     margin-right: 3vh;
@@ -59,16 +80,6 @@
 
 .separateV {
     border-left: 0.5vh dotted white;
-}
-
-.contain {
-    color: var(--tertiary);
-    max-width: 150vh;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    flex-direction: column;
 }
 
 svg {
@@ -128,7 +139,7 @@ class details
     .circle text { 
         font-size: 2.3vh; /* 16px */
         font-family: var(--font1);
-        font-weight: 500;
+        /* font-weight: 500; */
         font-weight: bold; 
         fill:white;
     }

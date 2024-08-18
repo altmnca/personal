@@ -16,8 +16,16 @@
     --font1: "Rokkitt", serif;    
 }
 
-body {
-    transform: rotate(90deg);
+@media screen and (max-aspect-ratio: 3/2) {
+    body {
+        transform: rotate(90deg);
+    }
+}
+
+.contain {
+    color: var(--tertiary);
+    max-width: 100vh !important;
+    min-width: 100vh !important;
 }
 
 
@@ -66,16 +74,6 @@ body {
     border-left: 0.5vh dotted white;
 }
 
-.contain {
-    color: var(--tertiary);
-    max-width: 100vh;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    flex-direction: column;
-}
-
 svg {
     padding: 5px 0.5vh 5px 0.5vh;
     width: 5vh;
@@ -100,7 +98,7 @@ a {
     text-decoration: none;
     color: var(--tertiary);
     font-family: var(--font1);
-    font-size: 5vh;
+    font-size: 4.65vh;
     vertical-align: center;
     text-align: center;
     align-items: center;
