@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+
+/* Variable section */
+:root {
+    --primary: #16e896;
+    --secondary: #54dbc0;
+    --tertiary: white;
+    --linkedin: #4284f5;
+    --github: #5f5f5f;
+    --insta: #dd528e;
+    --steam: #2ea7e4;
+    --bulb: #ffe344;
+    --vax: #d454fb;
+    --lance: #152a51;
+    --daa: #EF6461;
+    --font1: "Rokkitt", serif;    
+}
+
+html, body {
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    height: 100%;
+    width: 100%;
+    background: black;
+    padding: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+/* col AND ROWS */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col25, .col33, .col50, .col66, .col75, .col80, .col20 {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    float: left;
+}
+
+/* For ALIGNING SVG AND TEXT SEPARATELY */
+.col50 {
+    float: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.col20 {
+    width: 20%;
+}
+
+.col33 {
+    width: 33.33%;
+}  
+
+.col66 {
+    width: 66.66%;
+}  
+
+.col75 {
+    width: 75%;
+}  
+
+.col25 {
+    width: 25%;
+}  
+
+.col80 {
+    width: 80%;
+}  
+
+/* custom SVG hover colours */
+.spoofy:hover {
+    fill: var(--primary);
+    color: var(--primary);
+}
+
+.linkedin:hover {
+    fill: var(--linkedin);
+    color: var(--linkedin);
+}
+
+.github:hover {
+    fill: var(--github);
+    color: var(--github);
+}
+
+.insta:hover {
+    fill: var(--insta);
+    color: var(--insta)
+}
+
+.steam:hover {
+    fill: var(--steam);
+    color: var(--steam);
+}
+
+.bulb:hover {
+    fill: var(--bulb);
+    color: var(--bulb);
+}
+
+.vax:hover {
+    fill: var(--vax);
+    color: var(--vax);
+}
+
+.lance:hover {
+    fill: var(--lance);
+    color: var(--lance);
+}
+
+.wave:hover {
+    stroke: var(--daa);
+    color: var(--daa);
+}
+
+.wave {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+/* Terminal animation */
+.terminal {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* For ALIGNING SVG AND TEXT SEPARATELY */
+.link-item {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-item svg {
+    flex-shrink: 0;
+}
+/* END OF SVG AND TEXT ALIGN */
