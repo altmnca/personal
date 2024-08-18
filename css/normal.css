@@ -95,7 +95,7 @@ a {
     text-decoration: none;
     color: var(--tertiary);
     font-family: var(--font1);
-    font-size: 7vh;
+    font-size: 6.5vh;
     vertical-align: center;
     text-align: center;
     align-items: center;
@@ -137,6 +137,10 @@ class details
         font-family: var(--font1);
         font-weight: 500;
         margin-top: 55vh;
+        justify-content: center;
+        align-items: center;
+        vertical-align: center;
+        text-align: center;
         color: black;
         opacity: 0;
         animation: fadeInToWhite 1s ease 2s forwards;
@@ -154,6 +158,8 @@ class details
         display: flex;
         justify-content: center;
         align-items: center;
+        vertical-align: center;
+        text-align: center;
         color: black;
         opacity: 0;
         animation: fadeInToWhite 1s ease 5s forwards;
