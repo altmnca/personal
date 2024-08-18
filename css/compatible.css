@@ -16,6 +16,10 @@
     --font1: "Rokkitt", serif;    
 }
 
+body {
+    overflow: hidden;
+}
+
 @media screen and (max-aspect-ratio: 3/2) {
     body {
         transform: rotate(90deg);
